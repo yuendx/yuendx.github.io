@@ -1,224 +1,156 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Amumu">
-    <meta name="description" content="分享黑科技,软件">
-    <meta name="author" content="Amumu">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Amumu - 时光停留</title><meta name="keywords" content="Amumu,时光停留,gaara,资源分享,windows"><meta name="author" content="Amumu"><meta name="copyright" content="Amumu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="时光停留">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Amumu">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Amumu">
+<meta property="og:description" content="时光停留">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/favicon.png">
+<meta property="article:author" content="Amumu">
+<meta property="article:tag" content="Amumu,时光停留,gaara,资源分享,windows">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/favicon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Amumu',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-11-02 18:43:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-    <title>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-        Amumu
-    </title>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-<link rel="stylesheet" href="/css/style.css">
-
-    <link rel="shortcut icon" href="/images/logo.svg">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/css/font-awesome.min.css">
-    <script id="hexo-configurations">
-    let KEEP = window.KEEP || {};
-    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.json"};
-    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":false},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"凡是过往,皆为序章"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.3"};
-    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
-  </script>
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-
-<body>
-<div class="progress-bar-container">
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
     
-        <span class="scroll-progress-bar"></span>
-    
-
-    
-        <span class="pjax-progress-bar"></span>
-        <span class="pjax-progress-icon">
-            <i class="fas fa-circle-notch fa-spin"></i>
-        </span>
-    
-</div>
-
-
-<main class="page-container">
-
-    
-        <div class="first-screen-container flex-center fade-in-down-animation">
-    <div class="content flex-center">
-        <div class="description">
-            凡是过往,皆为序章
-        </div>
-        
-            <div class="s-icon-list">
-                
-                    
-                        
-                            <span class="s-icon-item github">
-                                <a target="_blank" href="amumu.cc">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </span>
-                        
-                    
-                
-                    
-                        
-                            <span class="s-icon-item qq">
-                                <a target="_blank" href="6">
-                                    <i class="fab fa-qq"></i>
-                                </a>
-                            </span>
-                        
-                    
-                
-                    
-                        
-                            <span class="s-icon-item weixin">
-                                <a target="_blank" href="6">
-                                    <i class="fab fa-weixin"></i>
-                                </a>
-                            </span>
-                        
-                    
-                
-                    
-                        
-                            <span class="s-icon-item email">
-                                <a href="mailto:531953520@qq.com">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            </span>
-                        
-                    
-                
-            </div>
-        
-    </div>
-</div>
-
-    
-
-    <div class="page-main-content">
-
-        <div class="page-main-content-top">
-            <header class="header-wrapper">
-
-    <div class="header-content has-first-screen">
-        <div class="left">
-            
-            <a class="logo-title" href="/">
-                Amumu
-            </a>
-        </div>
-
-        <div class="right">
-            <div class="pc">
-                <ul class="menu-list">
-                    
-                        <li class="menu-item">
-                            <a class="active"
-                               href="/"
-                            >
-                                首页
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/categories"
-                            >
-                                分类
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/tags"
-                            >
-                                标签
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/archives"
-                            >
-                                归档
-                            </a>
-                        </li>
-                    
-                    
-                        <li class="menu-item search search-popup-trigger">
-                            <i class="fas fa-search"></i>
-                        </li>
-                    
-                </ul>
-            </div>
-            <div class="mobile">
-                
-                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
-                
-                <div class="icon-item menu-bar">
-                    <div class="menu-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-drawer">
-        <ul class="drawer-menu-list">
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class="active"
-                       href="/">首页</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/categories">分类</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/tags">标签</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/archives">归档</a>
-                </li>
-            
-        </ul>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-        </div>
-
-        <div class="page-main-content-middle">
-
-            <div class="main-content">
-
-                
-                    <div class="home-content-container fade-in-down-animation">
-    <ul class="home-article-list">
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2021/10/31/hexo-newpc/">
-                        Hexo博客迁移新电脑
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        本人纯属小白,方便以后查阅.备份一下
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/favicon.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 网站导航</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-bars"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时光轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Windows</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Android</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="//"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="//"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Amumu</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 网站导航</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-bars"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时光轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Windows</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Android</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="//"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="//"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/10/31/hexo-newpc/" title="Hexo博客迁移新电脑">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/src=http-_pic1.win4000.com_wallpaper_2020-01-07_5e1440b1c7aa2.jpg&amp;refer=http-_pic1.win4000.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg.1k43qadfry1s.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo博客迁移新电脑"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/31/hexo-newpc/" title="Hexo博客迁移新电脑">Hexo博客迁移新电脑</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-31T06:06:12.524Z" title="发表于 2021-10-31 14:06:12">2021-10-31</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-11-02T04:37:29.323Z" title="更新于 2021-11-02 12:37:29">2021-11-02</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a></span></div><div class="content">本人纯属小白,方便以后查阅.备份一下
 安装
 Git   
 Node.js
@@ -233,508 +165,192 @@ source/
 scaffolds/
 
 
-配置...
-                    
-                </div>
+配置 Git
+桌面右键选择bash here,设置用户名称和邮件地址12git config --global user.name “username”git config --global user.email &quot;username@xxxx.com&quot;
+完成后接着配置SSH
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Sun Oct 31 2021 14:06:12 GMT+0800">2021-10-31</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/categories/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
 
-    <a href="/2021/10/31/hexo-newpc/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
+配置SSH Key1ssh-keygen -t rsa -C “你的邮件地址”
 
-            </li>
-        
-            <li class="home-article-item">
+然后连续按三次回车，会生成id_rsa.pub文件，用记事本打开它，然后全部复制即可，待会要用。这个文件的地址：C:\Users\Administrator.ssh (文件夹下)
 
-                
+ 打开你的GitHub主页，打开设置-&gt;Deploy keys-&gt;Add deploy key.
 
-                <h3 class="home-article-title">
-                    <a href="/2021/10/27/tjflbq/">
-                        为文章添加分类与标签(Hexo)
-                    </a>
-                </h3>
+这里名称随便取，在下面粘贴内容保存即可。
 
-                <div class="home-article-content markdown-body">
-                    
-                        为文章添加分类与标签只有文章（post布局）支持分类和标签，需要在Front-matter中设置。分类有层级关系，标签没有。
-举个例子：1）下面文章它的标签是：Hexo、博客2）分类是： 个人博客 &gt; Hexo博客3）“Hexo博客” 是 “个...
-                    
-                </div>
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Wed Oct 27 2021 21:02:09 GMT+0800">2021-10-27</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/categories/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+测试下是否把SSH配置成功了在b ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/10/27/tjflbq/" title="为文章添加分类与标签(Hexo)">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/src=http-_attach.bbs.miui.com_forum_201311_02_112809qybz22ltn8ybxt2x.jpg&amp;refer=http-_attach.bbs.miui.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg.6g9a801ys9kw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="为文章添加分类与标签(Hexo)"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/27/tjflbq/" title="为文章添加分类与标签(Hexo)">为文章添加分类与标签(Hexo)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-27T13:02:09.000Z" title="发表于 2021-10-27 21:02:09">2021-10-27</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-10-27T13:19:50.280Z" title="更新于 2021-10-27 21:19:50">2021-10-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a></span></div><div class="content">为文章添加分类与标签只有文章（post布局）支持分类和标签，需要在Front-matter中设置。分类有层级关系，标签没有。
+举个例子：1）下面文章它的标签是：Hexo、博客2）分类是： 个人博客 &gt; Hexo博客3）“Hexo博客” 是 “个人博客” 的子分类
+123456categories:- 个人博客（第一层级）- Hexo博客（第二层级）tags:- Hexo- 博客
 
-    <a href="/2021/10/27/tjflbq/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
+为文章添加多个分类1）下面文章属于三个分类：日常 &gt; 生活，日常 &gt; 随想，日记2）其中生活、随想为日常的子分类，日常和日记为同级分类
+1234categories:- [日常, 生活]- [日常, 随想]- [日记]
 
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2021/10/27/hexogithub/">
-                        Github+hexo搭建个人博客
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        利用github仓库部署hexo实现搭建免费个人博客的方法
+基本操作常用命令
+清除缓存：hexo clean 
+生成静态文件：hexo generate可简写为 hexo g 
+启动服务器：hexo server或者 hexo s   常用参数：-p（--port）重设端口
+部署：hexo deploy可简写为hexo d，用于将网站部署到服务器上。（暂时用不到，目前都是在本地，后面我们将博客托管到GitHub Pages或Gite ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/10/27/hexogithub/" title="Github+hexo搭建个人博客">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/src=http-_attach.bbs.miui.com_forum_201311_02_112809qybz22ltn8ybxt2x.jpg&amp;refer=http-_attach.bbs.miui.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg.6g9a801ys9kw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Github+hexo搭建个人博客"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/27/hexogithub/" title="Github+hexo搭建个人博客">Github+hexo搭建个人博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-27T11:59:04.000Z" title="发表于 2021-10-27 19:59:04">2021-10-27</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-10-27T12:56:15.845Z" title="更新于 2021-10-27 20:56:15">2021-10-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a></span></div><div class="content">利用github仓库部署hexo实现搭建免费个人博客的方法
 安装前提在安装hexo之前首先安装必要工具点击安装: nodejs
 点击安装: git
 如果你的电脑中已经安装上述必备程序，那么请直接前往 安装 Hexo 步骤。
-安装好后右键打开git b...
-                    
-                </div>
+安装好后右键打开git bash运行如下命令测试是否安装成功
+12node -vnpm -v
 
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Wed Oct 27 2021 19:59:04 GMT+0800">2021-10-27</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/categories/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/">建站教程</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
+若有版本号输出，则证明安装成功。
+安装cnpm
+右键选择git bash，在弹出的终端里执行下面的命令
+1npm install -g cnpm --registry=https://registry.npm.taobao.org
+同上检查cnpm是否安装成功
+1cnpm -v #输出版本号即代表成功
 
-    <a href="/2021/10/27/hexogithub/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
+安装hexo上面所有步骤安装成功后即可安装hexo
+右键选择git bash并执行下面命令
+1cnpm install hexo-cli -g
 
-            </li>
-        
-            <li class="home-article-item">
+创建博客选择或者创建一个文件夹
+比如我们创建了一个名为blog的文件夹并打开
+在文件夹内空白处右键选择git bash
+然后执行下面命令
+1hexo init
 
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2021/10/26/tpyc/">
-                        图片隐藏文件
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        在日常生活中，我们可能有很多隐私文件。当然我们可以借助第三方软件去加密，但是我们不能轻易的判断加密软件是否本身就含有病毒。这里会介绍一种用windows自带的功能去把我们的隐私文件隐藏在一个图片里。
+若执行一半卡住不动就可以使用我们刚才安装的国内镜像
+按下ctrl+ ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/10/26/tpyc/" title="图片隐藏文件">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/src=http-_pic1.win4000.com_wallpaper_2020-01-07_5e1440b1c7aa2.jpg&amp;refer=http-_pic1.win4000.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg.1k43qadfry1s.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="图片隐藏文件"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/26/tpyc/" title="图片隐藏文件">图片隐藏文件</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-26T13:24:46.000Z" title="发表于 2021-10-26 21:24:46">2021-10-26</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-10-27T09:48:45.253Z" title="更新于 2021-10-27 17:48:45">2021-10-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Windows/">Windows</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Windows/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%9A%90%E8%97%8F/">隐藏</a></span></div><div class="content">在日常生活中，我们可能有很多隐私文件。当然我们可以借助第三方软件去加密，但是我们不能轻易的判断加密软件是否本身就含有病毒。这里会介绍一种用windows自带的功能去把我们的隐私文件隐藏在一个图片里。
 准备工具
 一个测试文件。（你想要隐藏的隐私文件）
-...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Oct 26 2021 21:24:46 GMT+0800">2021-10-26</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/categories/Windows/">Windows</a>&nbsp;
-                        </li>
-                    
-                    
-                        <li>
-                            &gt; 
-                            <a href="/categories/Windows/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E9%9A%90%E8%97%8F/">隐藏</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2021/10/26/tpyc/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2021/10/26/windowsjh/">
-                        windows 激活方式
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        代码更新: https://v0v.bid/    http://kms.cangshui.netoffice套件一句命令激活https://v0v.bid/kms.html
-安卓手机自建KMS激活服务器https://v0v.bid/android...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Tue Oct 26 2021 15:37:43 GMT+0800">2021-10-26</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/categories/Windows/">Windows</a>&nbsp;
-                        </li>
-                    
-                    
-                        <li>
-                            &gt; 
-                            <a href="/categories/Windows/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fas fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/%E7%B3%BB%E7%BB%9F%E6%BF%80%E6%B4%BB/">系统激活</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2021/10/26/windowsjh/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                <h3 class="home-article-title">
-                    <a href="/2021/10/25/hello-world/">
-                        Hello World
-                    </a>
-                </h3>
-
-                <div class="home-article-content markdown-body">
-                    
-                        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, yo...
-                    
-                </div>
-
-                <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fas fa-history"></i>&nbsp;<span class="home-article-date" data-date="Mon Oct 25 2021 20:02:14 GMT+0800">2021-10-25</span></span>
-        
-            <span class="home-article-category"><i class="fas fa-folder"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/categories/%E5%85%B6%E4%BB%96/">其他</a>&nbsp;
-                        </li>
-                    
-                    
-                </ul>
-            </span>
-        
-        
-    </div>
-
-    <a href="/2021/10/25/hello-world/">阅读全文&nbsp;<i class="fas fa-angle-right"></i></a>
-</div>
-
-            </li>
-        
-    </ul>
-
-    <div class="home-paginator">
-        <div class="paginator">
-    
-
-    
-</div>
-
-    </div>
-</div>
+一张图片。（用于存储你隐私文件的图片）
 
 
-                
-            </div>
+首先，我们把我们的隐私文件如图压缩。
 
-        </div>
+如图所示进入此目录的命令行
 
-        <div class="page-main-content-bottom">
-            <footer class="footer">
-    <div class="info-container">
-        <div class="copyright-info info-item">
-            &copy;
+然后如图在命令行输入指令。
+输入格式为 ： copy/b 图片名+压缩文件名 图片名。
+注意空格。
+
+验证指令是否成功。
+
+这时我们可以把压缩文件和隐私文件都删除。因为隐私文件已经成功的被我们隐藏在图片当中。现在我们如果双击这个图片的话只会显示图片。那么如何打开藏在图片里的隐私文件呢？ 我们可以用任意的解压软件打开。
+还有一个方法，我们可以直接把图片更改后缀名 要用的时候就恢复过来 放在RAR里加密 上传云盘也可以.
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/10/26/windowsjh/" title="windows 激活方式">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/5c1a00b190a6e.3yoopf03jy9s.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="windows 激活方式"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/26/windowsjh/" title="windows 激活方式">windows 激活方式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-26T07:37:43.000Z" title="发表于 2021-10-26 15:37:43">2021-10-26</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-10-27T09:48:18.244Z" title="更新于 2021-10-27 17:48:18">2021-10-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Windows/">Windows</a><i class="fas fa-angle-right"></i><a class="article-meta__categories" href="/categories/Windows/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a></span><span class="article-meta tags"><span class="article-meta__separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%B3%BB%E7%BB%9F%E6%BF%80%E6%B4%BB/">系统激活</a></span></div><div class="content">代码更新: https://v0v.bid/    http://kms.cangshui.netoffice套件一句命令激活https://v0v.bid/kms.html
+安卓手机自建KMS激活服务器https://v0v.bid/android.html
+windows系统镜像 Office镜像===============
+windows系统镜像下载https://msdn.itellyou.cn
+一键安装office套件https://otp.landian.vip/zh-cn/
+PE工具===============
+一键重装系统https://www.panyun.com
+浏览器===============
+chrome离线安装包https://www.iplaysoft.com/tools/chrome/
+解压工具===============
+7-Zip免费开源的压缩软件https://www.7-zip.org/download.html
+https://sparanoid.com/lab/7z/download.html
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/10/25/hello-world/" title="Hello World">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/src=http-_dik.img.kttpdq.com_pic_36_24793_b972f61ed9f93ae5_1440x900.jpg&amp;refer=http-_dik.img.kttpdq.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg.5xdyc2f6l6o.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/10/25/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-10-25T12:02:14.414Z" title="发表于 2021-10-25 20:02:14">2021-10-25</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-10-27T09:08:25.411Z" title="更新于 2021-10-27 17:08:25">2021-10-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E4%BB%96/">其他</a></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/favicon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Amumu</div><div class="author-info__description">时光停留</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://weibo.com/u/5933254484"><i class="fa fa-weibo"></i><span>微博</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://amumu.cc" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yuandcc@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/10/31/hexo-newpc/" title="Hexo博客迁移新电脑"><img src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/src=http-_pic1.win4000.com_wallpaper_2020-01-07_5e1440b1c7aa2.jpg&amp;refer=http-_pic1.win4000.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg.1k43qadfry1s.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo博客迁移新电脑"/></a><div class="content"><a class="title" href="/2021/10/31/hexo-newpc/" title="Hexo博客迁移新电脑">Hexo博客迁移新电脑</a><time datetime="2021-10-31T06:06:12.524Z" title="发表于 2021-10-31 14:06:12">2021-10-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/27/tjflbq/" title="为文章添加分类与标签(Hexo)"><img src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/src=http-_attach.bbs.miui.com_forum_201311_02_112809qybz22ltn8ybxt2x.jpg&amp;refer=http-_attach.bbs.miui.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg.6g9a801ys9kw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="为文章添加分类与标签(Hexo)"/></a><div class="content"><a class="title" href="/2021/10/27/tjflbq/" title="为文章添加分类与标签(Hexo)">为文章添加分类与标签(Hexo)</a><time datetime="2021-10-27T13:02:09.000Z" title="发表于 2021-10-27 21:02:09">2021-10-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/27/hexogithub/" title="Github+hexo搭建个人博客"><img src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/src=http-_attach.bbs.miui.com_forum_201311_02_112809qybz22ltn8ybxt2x.jpg&amp;refer=http-_attach.bbs.miui.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg.6g9a801ys9kw.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Github+hexo搭建个人博客"/></a><div class="content"><a class="title" href="/2021/10/27/hexogithub/" title="Github+hexo搭建个人博客">Github+hexo搭建个人博客</a><time datetime="2021-10-27T11:59:04.000Z" title="发表于 2021-10-27 19:59:04">2021-10-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/26/tpyc/" title="图片隐藏文件"><img src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/src=http-_pic1.win4000.com_wallpaper_2020-01-07_5e1440b1c7aa2.jpg&amp;refer=http-_pic1.win4000.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg.1k43qadfry1s.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="图片隐藏文件"/></a><div class="content"><a class="title" href="/2021/10/26/tpyc/" title="图片隐藏文件">图片隐藏文件</a><time datetime="2021-10-26T13:24:46.000Z" title="发表于 2021-10-26 21:24:46">2021-10-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/26/windowsjh/" title="windows 激活方式"><img src="https://cdn.jsdelivr.net/gh/yuendx/image@master/20211102/5c1a00b190a6e.3yoopf03jy9s.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="windows 激活方式"/></a><div class="content"><a class="title" href="/2021/10/26/windowsjh/" title="windows 激活方式">windows 激活方式</a><time datetime="2021-10-26T07:37:43.000Z" title="发表于 2021-10-26 15:37:43">2021-10-26</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
             
-              <span>2020</span>&nbsp;-&nbsp;
-            
-            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">Amumu</a>
-        </div>
-        
-            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-            <div class="website-count info-item">
-                
-                    <span id="busuanzi_container_site_uv">
-                        访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
-                    </span>
-                
-                
-                    <span id="busuanzi_container_site_pv">
-                        总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
-                    </span>
-                
             </div>
-        
-        
-        
-            <div class="icp-info info-item"><a target="_blank" rel="nofollow" href="https://beian.miit.gov.cn">萌ICP备20211108号</a></div>
-        
-    </div>
-</footer>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Windows/"><span class="card-category-list-name">Windows</span><span class="card-category-list-count">2</span></a><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Windows/%E5%B0%8F%E6%8A%80%E5%B7%A7/"><span class="card-category-list-name">小技巧</span><span class="card-category-list-count">2</span></a></li></ul></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%85%B6%E4%BB%96/"><span class="card-category-list-name">其他</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/"><span class="card-category-list-name">建站教程</span><span class="card-category-list-count">3</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/" style="font-size: 1.45em; color: rgb(173, 47, 86)">建站教程</a><a href="/tags/%E9%9A%90%E8%97%8F/" style="font-size: 1.15em; color: rgb(22, 46, 142)">隐藏</a><a href="/tags/%E7%B3%BB%E7%BB%9F%E6%BF%80%E6%B4%BB/" style="font-size: 1.15em; color: rgb(154, 177, 81)">系统激活</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/10/"><span class="card-archive-list-date">十月 2021</span><span class="card-archive-list-count">6</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2020-02-29T16:00:00.000Z"></div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-11-02T10:43:30.974Z"></div></div></div></div></div></div></main><footer id="footer" style="background: white"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By Amumu</div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=20211108" target="_blank">萌ICP备20211108号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><div class="js-pjax"></div><script src="//lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script><script src="https://myhkw.cn/api/player/163577093779" id="myhk" key="163577093779" m="1"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
 
-        </div>
-    </div>
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
 
-    
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"]):not([href="/music/"]):not([href="/no-pjax/"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
 
-    <div class="right-bottom-side-tools">
-        <div class="side-tools-container">
-    <ul class="side-tools-list">
-        <li class="tools-item tool-font-adjust-plus flex-center">
-            <i class="fas fa-search-plus"></i>
-        </li>
+document.addEventListener('pjax:send', function () {
 
-        <li class="tools-item tool-font-adjust-minus flex-center">
-            <i class="fas fa-search-minus"></i>
-        </li>
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
 
-        <li class="tools-item tool-expand-width flex-center">
-            <i class="fas fa-arrows-alt-h"></i>
-        </li>
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
 
-        <li class="tools-item tool-dark-light-toggle flex-center">
-            <i class="fas fa-moon"></i>
-        </li>
+  typeof typed === 'object' && typed.destroy()
 
-        <!-- rss -->
-        
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
 
-        
+})
 
-        <li class="tools-item tool-scroll-to-bottom flex-center">
-            <i class="fas fa-arrow-down"></i>
-        </li>
-    </ul>
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
 
-    <ul class="exposed-tools-list">
-        <li class="tools-item tool-toggle-show flex-center">
-            <i class="fas fa-cog fa-spin"></i>
-        </li>
-        
-            <li class="tools-item tool-scroll-to-top flex-center">
-                <i class="arrow-up fas fa-arrow-up"></i>
-                <span class="percent"></span>
-            </li>
-        
-    </ul>
-</div>
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
 
-    </div>
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
 
-    
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
 
-    <div class="image-viewer-container">
-    <img src="">
-</div>
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
 
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
 
-    
-        <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-          <span class="search-input-field-pre">
-            <i class="fas fa-keyboard"></i>
-          </span>
-            <div class="search-input-container">
-                <input autocomplete="off"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       placeholder="搜索..."
-                       spellcheck="false"
-                       type="search"
-                       class="search-input"
-                >
-            </div>
-            <span class="popup-btn-close">
-                <i class="fas fa-times"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
 
-    
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
 
-</main>
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
 
+  typeof preloader === 'object' && preloader.endLoading()
+})
 
-
-
-<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/dark-light-toggle.js"></script>
-
-
-    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/local-search.js"></script>
-
-
-
-    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/code-copy.js"></script>
-
-
-
-    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/lazyload.js"></script>
-
-
-<div class="post-scripts pjax">
-    
-</div>
-
-
-    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/libs/pjax.min.js"></script>
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        window.pjax = new Pjax({
-            selectors: [
-                'head title',
-                '.page-container',
-                '.pjax'
-            ],
-            history: true,
-            debug: false,
-            cacheBust: false,
-            timeout: 0,
-            analytics: false,
-            currentUrlFullReload: false,
-            scrollRestoration: false,
-            // scrollTo: true,
-        });
-
-        document.addEventListener('pjax:send', () => {
-            KEEP.utils.pjaxProgressBarStart();
-        });
-
-        document.addEventListener('pjax:complete', () => {
-            KEEP.utils.pjaxProgressBarEnd();
-            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
-            KEEP.refresh();
-        });
-    });
-</script>
-
-
-
-</body>
-</html>
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
